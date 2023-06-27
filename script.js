@@ -40,7 +40,7 @@ function createMovieCard(movie) {
   const formattedDate = release_date || 'No release date';
   const cardTemplate = `
     <div class="column">
-      <div class="card>
+      <div class="card">
         <a class="card-media" href="./img-01.jpeg">
           <img src="${imagePath}" alt="${original_title}" width="100%" />
         </a>
@@ -72,7 +72,7 @@ function clearResults() {
 // Show results in page
 function showResults(item) {
   const newContent = item.map(createMovieCard).join('');
-  result.innerHTML = newContent || '<p>No results found.</p>';
+  result.innerHTML += newContent || '<p>No results found.</p>';
 }
 
 // Load more results
