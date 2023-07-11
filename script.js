@@ -122,4 +122,5 @@ async function init() {
   await fetchAndShowResult(url);
 }
 
+// inint when loading
 init();
